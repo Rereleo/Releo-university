@@ -1,0 +1,17 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "releo-university",
+  "main": "worker.js",
+  "compatibility_date": "2026-08-08",
+  "assets": {
+    "directory": ".",
+    "binding": "ASSETS"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "releo-university",
+      "database_id": "bd53ee9f-8eb9-4607-895b-613658dce328"
+    }
+  ]
+}

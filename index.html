@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Releo University</title>
+  <meta name="theme-color" content="#122219" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Releo U" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="icon-192.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">RU</div>
+        <div>
+          <div class="brand-title">Releo University</div>
+          <div class="brand-sub">Personal Learning OS</div>
+        </div>
+      </div>
+
+      <nav id="nav">
+        <button class="nav-item active" data-page="today">🏠 <span>Today</span></button>
+        <button class="nav-item" data-page="university">🎓 <span>University</span></button>
+        <button class="nav-item" data-page="knowledge">🧠 <span>Knowledge</span></button>
+        <button class="nav-item" data-page="review">🔄 <span>Review</span></button>
+        <button class="nav-item" data-page="exam">📝 <span>Exam</span></button>
+        <button class="nav-item" data-page="projects">🧪 <span>Projects</span></button>
+        <button class="nav-item" data-page="intelligence">📰 <span>Intelligence</span></button>
+        <button class="nav-item" data-page="progress">📊 <span>Progress</span></button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="semester">Semester 1</div>
+        <div class="semester-progress"><span id="semesterBar"></span></div>
+        <div class="muted" id="semesterText">Day 13 / 90</div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <div class="eyebrow">RELEO UNIVERSITY</div>
+          <h1 id="pageTitle">Today</h1>
+        </div>
+        <div class="top-actions">
+          <button id="installBtn" class="ghost hidden">安装到设备</button>
+          <span id="cloudBtn" class="ghost" title="学习进度自动云同步，无需登录">☁️ 同步中…</span>
+          <button id="resetBtn" class="ghost">重置演示数据</button>
+          <div class="date-chip" id="todayDate"></div>
+        </div>
+      </header>
+
+      <section id="page"></section>
+    </main>
+  </div>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-backdrop" data-close-modal="true"></div>
+    <div class="modal-card">
+      <button class="modal-close" data-close-modal="true">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
