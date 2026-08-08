@@ -1,13 +1,13 @@
 worker.js
-   wrangler.jsonc
-   package.json
-   package-lock.json
-   bun.lock
-   schema.sql
-   README-DEPLOY.md
-   .gitignore
-   .assetsignore
-   node_modules
-   .wrangler
-   .git
-   .git/**
+wrangler.jsonc
+package.json
+package-lock.json
+bun.lock
+schema.sql
+README-DEPLOY.md
+.gitignore
+.assetsignore
+**/node_modules
+**/.git
+**/.wrangler
+**/.DS_Store
